@@ -1,0 +1,166 @@
+/* -----START COLOR-VARIABLES----- */
+:root {
+  --color-1: #30013e;
+  --color-2: #680894;
+  --color-3: #ba7daf;
+  --color-4: #fffcf5;
+  --color-5: #ffe41d;
+}
+/* -----END COLOR-VARIABLES----- */
+
+/* -----START GLOBAL-CONFIGURATIONS----- */
+@font-face {
+  font-family: mango-salsa;
+  src: url("font/mangosalsa.ttf") format("truetype");
+}
+h2 {
+  font-family: "mango-salsa", sans-serif;
+  color: #000000;
+  font-size: 2.9em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+h3 {
+  font-size: 1.5em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 20px;
+  background-color: var(--color-4);
+}
+h1 {
+  font-size: 2.5em;
+}
+/* -----END GLOBAL-CONFIGURATIONS----- */
+
+/* -----START ALL-SECTIONS----- */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section {
+  margin-top: 200px;
+  padding-top: 155px;
+}
+/* -----END ALL-SECTIONS----- */
+
+/* START ----WHATSAPP-BTN---- */
+.whatsBtn {
+  color: white;
+  background-color: #45c556c1;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.whatsBtn:hover {
+  transform: scale(1.1, 1.1);
+}
+/* END ----WHATSAPP-BTN---- */
+
+/* START ----SCROLL-TOP-BTN---- */
+.scroll-to-top {
+  background-color: #ffe51dea;
+  padding: 18px;
+  font-size: 10px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.arrowUpIcon {
+  font-size: 15px;
+  color: var(--color-1);
+}
+
+.fade-slide-enter {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.fade-slide-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.fade-slide-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-slide-exit-active {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+/* END ----SCROLL-TOP-BTN---- */
+
+@media only screen and (max-width: 600px) {
+  /* START ----GLOBAL-CONFIGS---- */
+  h1 {
+    font-size: 27px;
+  }
+  p {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .section {
+    margin-top: 80px;
+    padding-top: 50px;
+  }
+  /* END ----GLOBAL-CONFIGS---- */
+
+  START ----FLOAT-BTNS---- .whatsBtn {
+    font-size: 30px;
+  }
+  .scroll-to-top {
+    padding: 15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+.tiktokIcon:hover {
+  color: var(--color-5);
+}
+.instagramIcon:hover {
+  color: var(--color-5);
+}
+.facebookIcon:hover {
+  color: var(--color-5);
+}

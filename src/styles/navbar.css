@@ -1,0 +1,130 @@
+.navbar-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #30013eed;
+  border-bottom: 5px solid var(--color-5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navItems {
+  display: flex;
+  gap: 16px;
+}
+
+.navItem {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  padding: 7px;
+  font-size: 0.8em;
+  background-color: var(--color-1);
+  border-radius: 7px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.navItemsContainer.open {
+  display: block;
+}
+.navItem:hover {
+  background-color: var(--color-5);
+  color: black;
+  transform: scale(1.1, 1.1);
+}
+.navLogo {
+  width: 100px;
+  margin: 10px;
+  margin-left: 50px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.navLogo:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  top: 2.4em;
+}
+.hamburger span {
+  display: none;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-4);
+  margin-bottom: 8px;
+  transition: ease-in 0.3s;
+}
+
+.hamburger.open span:first-child {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:last-child {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+/*-----START-FADE-EFFECT-----*/
+.slide-enter {
+  transform: translateY(-100%);
+}
+
+.slide-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms;
+}
+
+.slide-exit {
+  transform: translateY(0);
+}
+
+.slide-exit-active {
+  transform: translateY(-100%);
+  transition: transform 300ms;
+}
+/* -----END-FADE-EFFECT----- */
+
+/* -----START MEDIA QUERY----- */
+@media only screen and (max-width: 1200px) {
+  .navItems {
+    display: none;
+  }
+
+  .hamburger {
+    margin-right: 20px;
+  }
+
+  .navLogo {
+    width: 80px;
+  }
+
+  .hamburger span {
+    display: block;
+  }
+  .navbar-component {
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  .navItems.open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+  }
+  .navItem {
+    text-align: center;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.121);
+  }
+}
+/* -----END MEDIA QUERY----- */
