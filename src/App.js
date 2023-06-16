@@ -31,15 +31,15 @@ const App = () => {
 
   const container = useRef(null);
 
-  useEffect(() => {
-    Lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("./lottie-animation/guycomputer.json"),
-    });
-  }, []);
+  // useEffect(() => {
+  //   Lottie.loadAnimation({
+  //     container: container.current,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     animationData: require("./lottie-animation/guycomputer.json"),
+  //   });
+  // }, []);
   // ----END LOTTIE-ANIMATION----
   return (
     <div>
