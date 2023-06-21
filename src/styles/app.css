@@ -15,7 +15,8 @@
 }
 h2 {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(to right, var(--color-5) 0%, #b53dff 100%);
+  background: linear-gradient(to right, var(--color-5) 0%, #a637bd 80%);
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -121,8 +122,8 @@ h1 {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: red;
-  background: yellow;
+  color: var(--color-4);
+  background: var(--color-3);
 }
 ::selection {
   color: var(--color-4);
@@ -144,7 +145,7 @@ h1 {
     font-size: 18px;
   }
   .section {
-    margin-top: 80px;
+    margin-top: 150px;
     padding-top: 50px;
   }
   /* END ----GLOBAL-CONFIGS---- */
