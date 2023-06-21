@@ -37,8 +37,10 @@ const ServiciosSection = ({ sections, activeSection }) => {
             speed: 400,
             transition: true,
             axis: null,
+            tiltReverse: true,
             reset: true,
             easing: "cubic-bezier(.03,.98,.52,.99)",
+            gyroscope: true,
           }}
         >
           <img className="image-servicios" src={section.image}></img>
