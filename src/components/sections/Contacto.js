@@ -1,5 +1,5 @@
 import "../../styles/contacto.css";
-import AccordionContainer from "../AccordionContainer";
+import AccordionContainer from "../accordion/AccordionContainer";
 const Contacto = ({ id }) => {
   const accordionData = [
     {

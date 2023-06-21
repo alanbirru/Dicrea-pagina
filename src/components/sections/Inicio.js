@@ -1,8 +1,8 @@
 import "../../styles/inicio.css";
 const Inicio = ({ guyComputer, id }) => {
   return (
-    <div id={id} className="inicio-component section ">
-      <div className=" inicio-container">
+    <div id={id} className="inicio-component section">
+      <div className=" inicio-container wow animate__animated animate__fadeIn">
         <div className="inicio-info">
           <h1>
             Lorem ipsum dolor sit amet

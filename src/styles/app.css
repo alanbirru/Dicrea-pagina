@@ -116,6 +116,16 @@ h1 {
 
 /* END ----SCROLL-TOP-BTN---- */
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+::selection {
+  color: var(--color-4);
+  background: var(--color-3);
+}
+
 @media only screen and (max-width: 600px) {
   /* START ----GLOBAL-CONFIGS---- */
   h1 {

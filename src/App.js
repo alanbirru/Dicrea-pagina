@@ -12,8 +12,8 @@ import WOW from "wowjs";
 import Lottie from "lottie-web";
 
 import { useEffect, useRef } from "react";
-import WhatsappBtn from "./components/WhatsappBtn";
-import ScrollUpBtn from "./components/ScrollUpBtn";
+import WhatsappBtn from "./components/btns components/WhatsappBtn";
+import ScrollUpBtn from "./components/btns components/ScrollUpBtn";
 
 // Ids for navegation
 const Ids = ["Inicio", "Servicios", "Precios", "Contacto"];
@@ -31,15 +31,15 @@ const App = () => {
 
   const container = useRef(null);
 
-  // useEffect(() => {
-  //   Lottie.loadAnimation({
-  //     container: container.current,
-  //     renderer: "svg",
-  //     loop: true,
-  //     autoplay: true,
-  //     animationData: require("./lottie-animation/guycomputer.json"),
-  //   });
-  // }, []);
+  useEffect(() => {
+    Lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("./lottie-animation/guycomputer.json"),
+    });
+  }, []);
   // ----END LOTTIE-ANIMATION----
   return (
     <div>
