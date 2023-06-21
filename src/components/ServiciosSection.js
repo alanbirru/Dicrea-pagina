@@ -33,12 +33,11 @@ const ServiciosSection = ({ sections, activeSection }) => {
           gyroscope={true}
           className="tilt-image"
           options={{
-            max: 25,
+            max: -25,
             perspective: 1000,
             speed: 400,
             transition: true,
             axis: null,
-            tiltReverse: true,
             reset: true,
             easing: "cubic-bezier(.03,.98,.52,.99)",
             gyroscope: true,

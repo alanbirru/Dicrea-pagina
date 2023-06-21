@@ -14,8 +14,11 @@
   src: url("font/mangosalsa.ttf") format("truetype");
 }
 h2 {
-  font-family: "mango-salsa", sans-serif;
-  color: #000000;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, var(--color-5) 0%, #b53dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   font-size: 2.9em;
   text-align: center;
   margin-bottom: 60px;
