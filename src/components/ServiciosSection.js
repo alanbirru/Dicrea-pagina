@@ -30,6 +30,7 @@ const ServiciosSection = ({ sections, activeSection }) => {
         </div>
 
         <Tilt
+          gyroscope={true}
           className="tilt-image"
           options={{
             max: 25,
