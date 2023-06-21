@@ -2,7 +2,7 @@ import "../styles/servicios.css";
 import { CSSTransition } from "react-transition-group";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 
 const ServiciosSection = ({ sections, activeSection }) => {
   // START ----LIST-OF-SERVICES----
