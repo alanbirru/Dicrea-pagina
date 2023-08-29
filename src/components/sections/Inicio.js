@@ -5,8 +5,8 @@ const Inicio = ({ guyComputer, id }) => {
       <div className=" inicio-container wow animate__animated animate__fadeIn">
         <div className="inicio-info">
           <h1>
-            ¡ Impulsamos tu marca en el
-            <span className="yellowSpan"> mundo digital ! </span>
+            ¡Impulsamos tu marca en el
+            <span className="yellowSpan"> mundo digital</span>!
           </h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita

@@ -1,10 +1,11 @@
 .inicio-container h1 {
   color: white;
   text-align: center;
+  font-size: 60px;
 }
 
 .container .inicio-component {
-  height: 1000px;
+  height: 1100px;
   background-image: linear-gradient(
     to bottom right,
     rgb(165, 75, 183),
@@ -70,6 +71,7 @@
 @media only screen and (max-width: 500px) {
   .inicio-container h1 {
     width: 90%;
+    font-size: 35px;
   }
   .inicio-info {
     width: 90%;
@@ -81,7 +83,7 @@
     width: 90%;
   }
   .container .inicio-component {
-    height: 800px;
+    height: 875px;
     background-color: var(--color-2);
     width: 100%;
   }

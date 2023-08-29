@@ -7,6 +7,7 @@ iframe {
   align-items: center;
   justify-content: center;
   gap: 60px;
+  cursor: pointer;
 }
 .accordion-title {
   display: flex;
@@ -43,7 +44,7 @@ iframe {
   background-color: var(--color-5);
   color: black;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   iframe {
     width: 300px;
     height: 300px;
