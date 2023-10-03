@@ -21,7 +21,14 @@ const ServiciosSection = ({ sections, activeSection }) => {
   // END ----LIST-OF-SERVICES----
 
   return (
-    <CSSTransition in={true} classNames="fade" timeout={300} unmountOnExit>
+    <CSSTransition
+      in={true}
+      classNames="fade"
+      timeout={300}
+      unmountOnExit
+      data-aos-once="true"
+      data-aos="fade-down"
+    >
       <div className="servicios-section-container">
         <div className="servicios-section">
           <h3 className="section-h3">{section.title}</h3>
@@ -29,22 +36,28 @@ const ServiciosSection = ({ sections, activeSection }) => {
           <div className="services-list">{list}</div>
         </div>
 
-        <Tilt
-          gyroscope={true}
-          className="tilt-image"
-          options={{
-            max: -25,
-            perspective: 1000,
-            speed: 400,
-            transition: true,
-            axis: null,
-            reset: true,
-            easing: "cubic-bezier(.03,.98,.52,.99)",
-            gyroscope: true,
-          }}
-        >
-          <img className="image-servicios" src={section.image}></img>
-        </Tilt>
+        <div>
+          <Tilt
+            gyroscope={true}
+            className="tilt-image"
+            options={{
+              max: -25,
+              perspective: 1000,
+              speed: 400,
+              transition: true,
+              axis: null,
+              reset: true,
+              easing: "cubic-bezier(.03,.98,.52,.99)",
+              gyroscope: true,
+            }}
+          >
+            <img
+              className="image-servicios"
+              src={section.image}
+              loading="lazy"
+            ></img>
+          </Tilt>
+        </div>
       </div>
     </CSSTransition>
   );

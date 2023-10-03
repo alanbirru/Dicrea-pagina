@@ -104,7 +104,9 @@ const Servicios = ({ id }) => {
   return (
     <div
       id={id}
-      className="servicios-component section wow animate__animated animate__fadeInLeft"
+      className="servicios-component section"
+      data-aos-once="true"
+      data-aos="fade-down"
     >
       <h2>Nuestros Servicios</h2>
 

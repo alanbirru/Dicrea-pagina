@@ -9,6 +9,7 @@
 /* -----END COLOR-VARIABLES----- */
 
 /* -----START GLOBAL-CONFIGURATIONS----- */
+
 @font-face {
   font-family: mango-salsa;
   src: url("font/mangosalsa.ttf") format("truetype");
@@ -35,7 +36,7 @@ h3 {
 
 body {
   font-size: 20px;
-  background-color: var(--color-4);
+  background-color: var(--color-6);
 }
 h1 {
   font-size: 2.5em;

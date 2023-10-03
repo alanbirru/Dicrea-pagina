@@ -27,10 +27,7 @@ const Contacto = ({ id }) => {
   ];
 
   return (
-    <div
-      id={id}
-      className="wow animate__animated animate__fadeInDown contacto-component section"
-    >
+    <div id={id} className="contacto-component section">
       <h2>Contacto</h2>
 
       <div className="contacto-container">

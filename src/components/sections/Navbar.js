@@ -32,7 +32,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       const isVisible = prevScrollPos > currentScrollPos;
-
       setPrevScrollPos(currentScrollPos);
       setVisible(isVisible);
     };
@@ -65,11 +64,7 @@ const Navbar = () => {
     <CSSTransition in={visible} classNames="slide" timeout={200} unmountOnExit>
       <div className="navbar-component">
         <img className="navLogo" src={logo} alt="Logo" />
-        <ul
-          className={`navItems ${
-            hamburgerOpen ? "open" : ""
-          } wow animate__animated animate__bounceInDown animate__delay-0.5s`}
-        >
+        <ul className={`navItems ${hamburgerOpen ? "open" : ""}`}>
           {listNavItems}
         </ul>
         <Hamburger isOpen={hamburgerOpen} onClick={handleHamburgerClick} />

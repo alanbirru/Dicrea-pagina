@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
-const Paquete = ({ paquete, precio, contenido, ofrecemos }) => {
+const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
   // contenido list from the paquetes array
   const contenidoList = contenido.map((item, index) => {
     return (
@@ -23,7 +23,11 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos }) => {
 
   console.log(contenidoList);
   return (
-    <div className="paquete-container">
+    <div
+      className="paquete-container"
+      data-aos={fadeEffect}
+      data-aos-duration="3800"
+    >
       <div>
         {paquete}
         <h4 className="precio-title">{precio}</h4>

@@ -20,6 +20,7 @@ const PaquetesContainer = () => {
         "Aumento de seguidores en redes sociales",
         "Estadísticas de redes sociales",
       ],
+      fadeEffect: "fade-down",
     },
     {
       paquete: <h3 className="paquete-title">PAQUETE 2 </h3>,
@@ -39,6 +40,7 @@ const PaquetesContainer = () => {
         "Estadísticas de redes sociales",
         "Análisis de campaña de email marketing",
       ],
+      fadeEffect: "fade-down",
     },
     {
       paquete: <h3 className="paquete-title">PAQUETE 3 </h3>,
@@ -60,6 +62,7 @@ const PaquetesContainer = () => {
         "Análisis de campaña de email marketing",
         "Diseño de sitio web básico",
       ],
+      fadeEffect: "fade-down",
     },
 
     {
@@ -82,6 +85,7 @@ const PaquetesContainer = () => {
         "Análisis de campaña de email marketing",
         "Diseño de sitio web avanzado con funciones personalizadas",
       ],
+      fadeEffect: "fade-down",
     },
   ];
 
@@ -92,6 +96,7 @@ const PaquetesContainer = () => {
         precio={paquete.precio}
         contenido={paquete.contenido}
         ofrecemos={paquete.ofrecemos}
+        fadeEffect={paquete.fadeEffect}
       />
     );
   });

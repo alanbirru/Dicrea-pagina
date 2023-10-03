@@ -8,25 +8,19 @@ import Contacto from "./components/sections/Contacto";
 
 import Footer from "./components/sections/Footer";
 
-import WOW from "wowjs";
 import Lottie from "lottie-web";
 
 import { useEffect, useRef } from "react";
 import WhatsappBtn from "./components/btns components/WhatsappBtn";
 import ScrollUpBtn from "./components/btns components/ScrollUpBtn";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 // Ids for navegation
 const Ids = ["Inicio", "Servicios", "Precios", "Contacto"];
 
 const App = () => {
-  // ----START WOWCSS----
-  useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
-  // ----END WOWCSS----
-
   // ----START LOTTIE-ANIMATION----
 
   const container = useRef(null);
@@ -41,6 +35,12 @@ const App = () => {
     });
   }, []);
   // ----END LOTTIE-ANIMATION----
+
+  // ----START AOS-ANIMATION----
+  useEffect(() => {
+    Aos.init();
+  }, []);
+  // ----END AOS-ANIMATION----
   return (
     <div>
       <Navbar />
