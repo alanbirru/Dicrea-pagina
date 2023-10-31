@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../../styles/servicios.css";
 import ServiciosTitle from "../ServiciosTitle";
 import ServiciosSection from "../ServiciosSection";
@@ -27,13 +27,6 @@ const Servicios = ({ id }) => {
 
   const studioIcon = <FontAwesomeIcon className="studioIcon" icon={faCamera} />;
   // END ----SERVICIOS-ICON-VARIABLES----
-
-  // START ----ACTIVE-SECTION----
-  const [activeSection, setActiveSection] = useState("marketing");
-  const handleSectionClick = (sectionName) => {
-    setActiveSection(sectionName);
-  };
-  // END ----ACTIVE-SECTION----
 
   // START ----ARRAY-OF-SECTIONS----
   const sections = [
@@ -87,6 +80,15 @@ const Servicios = ({ id }) => {
     },
   ];
   // END ----ARRAY-OF-SECTIONS----
+
+  // START ----ACTIVE-SECTION----
+  const [activeSection, setActiveSection] = useState("marketing");
+
+  const handleSectionClick = (section) => {
+    setActiveSection(section);
+  };
+
+  // END ----ACTIVE-SECTION----
 
   // START ----DISPLAY-TITLES----
   const displayServiciosTitle = sections.map((item) => {
