@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import "../../styles/servicios.css";
-import ServiciosTitle from "../ServiciosTitle";
-import ServiciosSection from "../ServiciosSection";
+import "../../../styles/servicios.css";
+import ServiciosTitle from "../../ServiciosTitle";
+import ServiciosSection from "../../ServiciosSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // START ---- IMPORT-ICONS-SERVISES ----
@@ -11,9 +11,9 @@ import { faCamera } from "@fortawesome/free-solid-svg-icons";
 // END ---- IMPORT-ICONS-SERVISES ----
 
 // START ----IMAGES----
-import marketingImage from "../../images/marketing.jpg";
-import studioImage from "../../images/studio.jpg";
-import webservicesImage from "../../images/webservices.jpg";
+import marketingImage from "../../../images/marketing.jpg";
+import studioImage from "../../../images/studio.jpg";
+import webservicesImage from "../../../images/webservices.jpg";
 // END ----IMAGES----
 
 const Servicios = ({ id }) => {

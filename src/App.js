@@ -3,7 +3,7 @@ import "./styles/app.css";
 
 import Inicio from "./components/sections/Inicio";
 import Precios from "./components/sections/Precios";
-import Servicios from "./components/sections/Servicios";
+import Servicios from "./components/sections/Servicios/Servicios";
 import Contacto from "./components/sections/Contacto";
 
 import Footer from "./components/sections/Footer";

@@ -3,7 +3,6 @@ import { CSSTransition } from "react-transition-group";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Tilt from "react-parallax-tilt";
-import { useState, useEffect } from "react";
 
 const ServiciosSection = ({ sections, activeSection }) => {
   // START ----LIST-OF-SERVICES-BUTTONS----
