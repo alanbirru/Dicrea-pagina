@@ -31,7 +31,7 @@ const Footer = () => {
   const cRightIcon = renderIcon("c-right-icon", faCopyright);
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footerContainer">
         <div className="footerSection">
           {phoneIcon}
@@ -48,8 +48,8 @@ const Footer = () => {
           {emailIcon}
           <div className="footer-content">
             <p>¿TIENES ALGUNA PREGUNTA?</p>
-            <a className="emailLink" href="mailto:info@bananagroup.mx">
-              @dicrea.com
+            <a className="emailLink" href="mailto: di.creadigital0@gmail.com">
+              di.creadigital0@gmail.com
             </a>
           </div>
         </div>
@@ -59,8 +59,31 @@ const Footer = () => {
           <div className="footer-content">
             <p>NUESTRAS REDES</p>
             <div className="logos-social-media">
-              <div> {tiktokIcon}</div> <div>{instagramIcon}</div>
-              <div>{FacebookIcon}</div>
+              <div>
+                <a
+                  href="https://www.tiktok.com/@di.crea?_t=8h0JMtVzJZN&_r=1"
+                  target="_blank"
+                >
+                  {tiktokIcon}
+                </a>
+              </div>
+
+              <div>
+                <a
+                  href="https://instagram.com/di.crea_?igshid=MzMyNGUyNmU2YQ=="
+                  target="_blank"
+                >
+                  {instagramIcon}
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100087115505343&mibextid=ZbWKwL"
+                  target="_blank"
+                >
+                  {FacebookIcon}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -70,7 +93,7 @@ const Footer = () => {
         <span style={{ color: "white", marginRight: 5 }}>{cRightIcon}</span>
         <p>Copyright 2023 dicrea. Todos los derechos reservados.</p>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -1,13 +1,12 @@
-import Navbar from "./components/sections/Navbar";
+import Navbar from "./components/sections/Navbar/Navbar";
 import "./styles/app.css";
 
 import Inicio from "./components/sections/Inicio";
-import Precios from "./components/sections/Precios";
+import Precios from "./components/sections/Precios/Precios";
 import Servicios from "./components/sections/Servicios/Servicios";
-import Contacto from "./components/sections/Contacto";
+import Contacto from "./components/sections/Contacto/Contacto";
 
 import Footer from "./components/sections/Footer";
-
 import Lottie from "lottie-web";
 
 import { useEffect, useRef } from "react";
@@ -49,10 +48,10 @@ const App = () => {
         <Servicios id={Ids[1]} />
         <Precios id={Ids[2]} />
         <Contacto id={Ids[3]} />
+        <Footer />
       </div>
       <WhatsappBtn />
       <ScrollUpBtn />
-      <Footer />
     </div>
   );
 };

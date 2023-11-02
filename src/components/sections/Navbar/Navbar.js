@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
-import "../../styles/navbar.css";
-import Hamburger from "../Hamburger";
-
-import logo from "../../images/DICREA-LOGO.png";
+import "../../../styles/navbar.css";
+import Hamburger from "./Hamburger";
+import logo from "../../../images/DICREA-LOGO.png";
 
 const Navbar = () => {
   // useState for tracking the value of the scroll

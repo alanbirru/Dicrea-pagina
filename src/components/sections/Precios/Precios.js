@@ -1,5 +1,5 @@
-import PaquetesContainer from "../paquetes/PaquetesContainer";
-import "../../styles/precios.css";
+import PaquetesContainer from "./paquetes/PaquetesContainer";
+import "../../../styles/precios.css";
 const Precios = ({ id }) => {
   return (
     <div id={id} className="precios-component section">

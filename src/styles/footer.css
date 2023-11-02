@@ -1,7 +1,6 @@
 .footer {
   background-color: var(--color-1);
-  margin-top: 0;
-  margin-top: 150px;
+  width: 100%;
 }
 
 .footerContainer {
@@ -9,7 +8,6 @@
   justify-content: center;
   gap: 130px;
   flex-wrap: wrap;
-
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -30,6 +28,10 @@
   font-size: 35px;
   color: var(--color-5);
 }
+a {
+  color: inherit;
+}
+
 .bold-span {
   font-weight: 800;
 }
@@ -56,6 +58,9 @@ a.emailLink {
 }
 /* START ---MEDIA-QUERY-PHONES */
 @media only screen and (max-width: 600px) {
+  .footer {
+    max-height: none;
+  }
   .footerContainer {
     justify-content: flex-start;
     gap: 40px;
@@ -78,9 +83,3 @@ a.emailLink {
   }
 }
 /* END ---MEDIA-QUERY-PHONES */
-
-@media screen and (min-width: 3840px) {
-  .footer {
-    height: 30vh;
-  }
-}

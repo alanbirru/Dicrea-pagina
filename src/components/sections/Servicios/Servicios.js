@@ -1,7 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+
+// START ----STYLES----
 import "../../../styles/servicios.css";
-import ServiciosTitle from "../../ServiciosTitle";
-import ServiciosSection from "../../ServiciosSection";
+// END ----STYLES----
+
+// START ----COMPONENTS----
+import ServiciosTitle from "./ServiciosTitle";
+import ServiciosSection from "./ServiciosSection";
+// END ----COMPONENTS----
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // START ---- IMPORT-ICONS-SERVISES ----
