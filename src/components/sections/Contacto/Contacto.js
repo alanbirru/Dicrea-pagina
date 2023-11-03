@@ -1,5 +1,6 @@
 import "../../../styles/contacto.css";
 import AccordionContainer from "./accordion/AccordionContainer";
+import EmailForm from "./EmailForm";
 const Contacto = ({ id }) => {
   const accordionData = [
     {
@@ -44,6 +45,7 @@ const Contacto = ({ id }) => {
           <AccordionContainer accordion={accordionData} />
         </div>
       </div>
+      <EmailForm />
     </div>
   );
 };

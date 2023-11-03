@@ -16,10 +16,10 @@
     "formik": "^2.4.5",
     "lottie-web": "^5.12.0",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.148",
     "react-scripts": "5.0.1",
-    "react-tilt": "^1.0.2",
     "react-transition-group": "^4.4.5",
     "web-vitals": "^2.1.4"
   },

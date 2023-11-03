@@ -36,7 +36,7 @@ h3 {
   transition: ease-in-out 0.3s;
 }
 .active {
-  background-color: var(--color-5);
+  background-color: var(--color-2);
 }
 
 .active .servicios-Title-Icon,
@@ -44,7 +44,7 @@ h3 {
   color: white;
 }
 .servicios-title .servicios-title-container:hover {
-  background-color: var(--color-5);
+  background-color: var(--color-3);
 }
 
 .servicios-title-container:hover .servicios-Title-Icon,

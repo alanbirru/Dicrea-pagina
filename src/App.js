@@ -12,6 +12,7 @@ import Lottie from "lottie-web";
 import { useEffect, useRef } from "react";
 import WhatsappBtn from "./components/btns components/WhatsappBtn";
 import ScrollUpBtn from "./components/btns components/ScrollUpBtn";
+import AnimatedCursor from "react-animated-cursor";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -41,7 +42,7 @@ const App = () => {
   }, []);
   // ----END AOS-ANIMATION----
   return (
-    <div>
+    <>
       <Navbar />
       <div className="container">
         <Inicio guyComputer={container} id={Ids[0]} />
@@ -52,7 +53,28 @@ const App = () => {
       </div>
       <WhatsappBtn />
       <ScrollUpBtn />
-    </div>
+      <AnimatedCursor
+        color="255, 215, 0"
+        outerSize={25}
+        outerScale={2}
+        innerSize={10}
+        showSystemCursor={true}
+        innerScale={1}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
+    </>
   );
 };
 export default App;
