@@ -75,9 +75,6 @@ h3 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }
-.tilt-image {
-  transition: transform 0.2s;
-}
 
 .services-list {
   display: flex;

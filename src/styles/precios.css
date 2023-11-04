@@ -61,6 +61,7 @@
 
 .loQuiero {
   text-align: center;
+  margin: auto;
   padding-bottom: 20px;
 }
 .loQuiero a {
@@ -79,7 +80,7 @@
 
 @media only screen and (max-width: 600px) {
   .paquete-container {
-    width: 90%;
+    width: 80%;
   }
 
   .paquetesContainer {

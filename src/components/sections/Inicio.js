@@ -17,7 +17,9 @@ const Inicio = ({ guyComputer, id }) => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
             pariatur
           </p>
-          <button className="btn-contactanos">¡Contactanos!</button>
+          <button className="btn-contactanos">
+            <a>¡Contactanos!</a>
+          </button>
         </div>
 
         <div ref={guyComputer} className="computerGuy"></div>

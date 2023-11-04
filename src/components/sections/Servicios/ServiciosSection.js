@@ -28,20 +28,7 @@ const ServiciosSection = ({ sections, activeSection }) => {
       </div>
 
       <div>
-        <Tilt
-          gyroscope={true}
-          className="tilt-image"
-          options={{
-            max: -25,
-            perspective: 1000,
-            speed: 400,
-            transition: true,
-            axis: null,
-            reset: true,
-            easing: "cubic-bezier(.03,.98,.52,.99)",
-            gyroscope: true,
-          }}
-        >
+        <Tilt gyroscope={true} className="tilt-image">
           <img
             className="image-servicios"
             src={section.image}
