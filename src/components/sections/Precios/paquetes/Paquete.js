@@ -25,14 +25,15 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
   console.log(contenidoList);
   return (
     <Tilt
-      perspective={5000}
-      scale={1.04}
+      perspective={3000}
+      scale={1.07}
       className="paquete-container "
       glareEnable={true}
       glareMaxOpacity={0.8}
       glareColor="#ffffff"
       glarePosition="bottom"
       glareBorderRadius="20px"
+      transitionEasing={"cubic-bezier(.03,.98,.52,.99)"}
     >
       <div data-aos={fadeEffect} data-aos-duration="3800">
         {paquete}
