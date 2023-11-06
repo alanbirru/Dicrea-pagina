@@ -33,11 +33,11 @@ export default function ParticlesDesign() {
           },
           modes: {
             push: {
-              quantity: 4,
+              quantity: 0,
             },
             repulse: {
               distance: 150,
-              duration: 0.4,
+              duration: 0.2,
             },
           },
         },
@@ -59,7 +59,7 @@ export default function ParticlesDesign() {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 4,
             straight: false,
           },
           number: {
