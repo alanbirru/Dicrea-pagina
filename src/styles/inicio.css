@@ -5,7 +5,8 @@
 }
 
 .container .inicio-component {
-  height: 1100px;
+  position: relative;
+  height: 100vh;
   background-image: linear-gradient(
     to bottom right,
     rgb(165, 75, 183),
@@ -13,6 +14,9 @@
   );
   width: 100%;
   margin-top: 0;
+  overflow: hidden;
+  max-height: 1000px;
+  min-height: 900px;
 }
 
 .inicio-container {
@@ -21,6 +25,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 
 .inicio-info {

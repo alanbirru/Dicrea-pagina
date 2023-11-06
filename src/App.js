@@ -44,13 +44,16 @@ const App = () => {
   return (
     <>
       <Navbar />
+
       <div className="container">
         <Inicio guyComputer={container} id={Ids[0]} />
         <Servicios id={Ids[1]} />
         <Precios id={Ids[2]} />
+
         <Contacto id={Ids[3]} />
         <Footer />
       </div>
+
       <WhatsappBtn />
       <ScrollUpBtn />
       <AnimatedCursor
