@@ -22,7 +22,7 @@ const Inicio = ({ guyComputer, id }) => {
             <a>¡Contactanos!</a>
           </button>
         </div>
-        {/* <div ref={guyComputer} className="computerGuy"></div> */}
+        <div ref={guyComputer} className="computerGuy"></div>
         <ParticlesDesign />
       </div>
     </div>

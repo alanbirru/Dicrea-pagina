@@ -36,8 +36,8 @@ export default function ParticlesDesign() {
               quantity: 0,
             },
             repulse: {
-              distance: 150,
-              duration: 0.2,
+              distance: 200,
+              duration: 0.5,
             },
           },
         },
@@ -49,7 +49,7 @@ export default function ParticlesDesign() {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.6,
             width: 1,
           },
           move: {
@@ -59,7 +59,7 @@ export default function ParticlesDesign() {
               default: "bounce",
             },
             random: false,
-            speed: 4,
+            speed: 3,
             straight: false,
           },
           number: {

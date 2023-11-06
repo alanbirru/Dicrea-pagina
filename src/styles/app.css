@@ -51,7 +51,7 @@ h1 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-2);
+  background: var(--color-3);
   border-radius: 10px;
   height: 130px;
 }
