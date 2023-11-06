@@ -1,4 +1,6 @@
 import "../../styles/inicio.css";
+import ParticlesDesign from "../ParticlesDesign";
+
 const Inicio = ({ guyComputer, id }) => {
   return (
     <div id={id} className="inicio-component section">
@@ -23,6 +25,7 @@ const Inicio = ({ guyComputer, id }) => {
         </div>
 
         <div ref={guyComputer} className="computerGuy"></div>
+        <ParticlesDesign />
       </div>
     </div>
   );
