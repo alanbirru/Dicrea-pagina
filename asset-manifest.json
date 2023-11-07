@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dicrea-pagina/static/css/main.e6866121.css",
-    "main.js": "/Dicrea-pagina/static/js/main.88d833bd.js",
+    "main.js": "/Dicrea-pagina/static/js/main.4e978e79.js",
     "static/media/webservices.jpg": "/Dicrea-pagina/static/media/webservices.4edd52883af70369dd89.jpg",
     "static/media/mangosalsa.ttf": "/Dicrea-pagina/static/media/mangosalsa.ce224d90f4d78733bfc0.ttf",
     "static/media/marketing.jpg": "/Dicrea-pagina/static/media/marketing.8e812fa7a66dad8a740b.jpg",
@@ -9,10 +9,10 @@
     "static/media/DICREA-LOGO.png": "/Dicrea-pagina/static/media/DICREA-LOGO.437fc130cd35e5b71ee5.png",
     "index.html": "/Dicrea-pagina/index.html",
     "main.e6866121.css.map": "/Dicrea-pagina/static/css/main.e6866121.css.map",
-    "main.88d833bd.js.map": "/Dicrea-pagina/static/js/main.88d833bd.js.map"
+    "main.4e978e79.js.map": "/Dicrea-pagina/static/js/main.4e978e79.js.map"
   },
   "entrypoints": [
     "static/css/main.e6866121.css",
-    "static/js/main.88d833bd.js"
+    "static/js/main.4e978e79.js"
   ]
 }
