@@ -7,7 +7,6 @@ export default function EmailForm() {
       <div>
         <input placeholder="Nombre" />
       </div>
-
       <div>
         <input type="email" placeholder="Correo electrónico" />
       </div>

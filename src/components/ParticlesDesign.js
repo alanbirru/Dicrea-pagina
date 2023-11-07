@@ -65,7 +65,7 @@ export default function ParticlesDesign() {
           number: {
             density: {
               enable: true,
-              area: 1200,
+              area: 1300,
             },
             value: 80,
           },
@@ -76,7 +76,7 @@ export default function ParticlesDesign() {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 2 },
+            value: { min: 2, max: 1 },
           },
         },
         detectRetina: true,

@@ -43,13 +43,11 @@ h1 {
   font-size: 2.5em;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 8px;
-  background: rgb(216, 216, 216);
+  background: rgb(212, 212, 212);
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--color-3);
   border-radius: 10px;
@@ -92,14 +90,15 @@ h1 {
 
 /* START ----SCROLL-TOP-BTN---- */
 .scroll-to-top {
-  background-color: #ffe51dea;
+  background-color: #ffe51d;
+  border: 2px black solid;
   padding: 18px;
   font-size: 10px;
   border-radius: 10px;
   position: fixed;
   bottom: 90px;
   right: 20px;
-  border: none;
+
   cursor: pointer;
 }
 

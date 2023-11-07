@@ -1,15 +1,16 @@
-import Navbar from "./components/sections/Navbar/Navbar";
+import { useEffect, useRef } from "react";
+
 import "./styles/app.css";
 
+import Navbar from "./components/sections/Navbar/Navbar";
 import Inicio from "./components/sections/Inicio";
-import Precios from "./components/sections/Precios/Precios";
 import Servicios from "./components/sections/Servicios/Servicios";
+import Precios from "./components/sections/Precios/Precios";
 import Contacto from "./components/sections/Contacto/Contacto";
-
 import Footer from "./components/sections/Footer";
+
 import Lottie from "lottie-web";
 
-import { useEffect, useRef } from "react";
 import WhatsappBtn from "./components/btns components/WhatsappBtn";
 import ScrollUpBtn from "./components/btns components/ScrollUpBtn";
 import AnimatedCursor from "react-animated-cursor";
@@ -49,7 +50,6 @@ const App = () => {
         <Inicio guyComputer={container} id={Ids[0]} />
         <Servicios id={Ids[1]} />
         <Precios id={Ids[2]} />
-
         <Contacto id={Ids[3]} />
         <Footer />
       </div>
