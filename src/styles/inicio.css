@@ -20,6 +20,7 @@
     var(--color-2) 49%,
     var(--color-1) 100%
   );
+
   width: 100%;
   margin-top: 0;
   overflow: hidden;

@@ -39,13 +39,12 @@ const Contacto = ({ id }) => {
           height="300"
           loading="lazy"
         ></iframe>
-
-        <div>
+        <EmailForm />
+        {/* <div>
           <h3 className="preguntas-frecuentes-title">Preguntas Frecuentes</h3>
           <AccordionContainer accordion={accordionData} />
-        </div>
+        </div> */}
       </div>
-      <EmailForm />
     </div>
   );
 };

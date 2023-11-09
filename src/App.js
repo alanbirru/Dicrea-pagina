@@ -8,7 +8,6 @@ import Servicios from "./components/sections/Servicios/Servicios";
 import Precios from "./components/sections/Precios/Precios";
 import Contacto from "./components/sections/Contacto/Contacto";
 import Footer from "./components/sections/Footer";
-
 import Lottie from "lottie-web";
 
 import WhatsappBtn from "./components/btns components/WhatsappBtn";
@@ -19,6 +18,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 // Ids for navegation
+
 const Ids = ["Inicio", "Servicios", "Precios", "Contacto"];
 
 const App = () => {
@@ -42,6 +42,7 @@ const App = () => {
     Aos.init();
   }, []);
   // ----END AOS-ANIMATION----
+
   return (
     <>
       <Navbar />
@@ -56,6 +57,7 @@ const App = () => {
 
       <WhatsappBtn />
       <ScrollUpBtn />
+
       <AnimatedCursor
         color="255, 215, 0"
         outerSize={25}

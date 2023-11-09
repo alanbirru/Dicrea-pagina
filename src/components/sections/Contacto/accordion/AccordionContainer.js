@@ -21,7 +21,7 @@ const AccordionContainer = ({ accordion }) => {
       />
     );
   });
-  console.log(accordionList);
+
   return <div className="accordion-container">{accordionList}</div>;
 };
 export default AccordionContainer;

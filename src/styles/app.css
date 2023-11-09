@@ -148,7 +148,7 @@ h1 {
 @media only screen and (max-width: 600px) {
   /* START ----GLOBAL-CONFIGS---- */
   h1 {
-    font-size: 27px;
+    font-size: 30px;
   }
   p {
     font-size: 15px;

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { CSSTransition } from "react-transition-group";
+
 const ScrollUpBtn = () => {
   const arrowUpIcon = (
     <FontAwesomeIcon className="arrowUpIcon" icon={faArrowUp} />
@@ -9,6 +10,7 @@ const ScrollUpBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   // ----START SCROLL-UP----
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -20,6 +22,7 @@ const ScrollUpBtn = () => {
       setIsVisible(false);
     }
   };
+
   // ----END SCROLL-UP----
 
   // START ----USE-EFFECT-SCROLL----

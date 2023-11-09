@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Hamburger from "./Hamburger";
 import { CSSTransition } from "react-transition-group";
 import "../../../styles/navbar.css";
-import Hamburger from "./Hamburger";
 import logo from "../../../images/DICREA-LOGO.png";
 
 const Navbar = () => {

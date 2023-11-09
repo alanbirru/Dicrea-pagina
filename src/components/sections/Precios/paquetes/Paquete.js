@@ -22,7 +22,6 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
     );
   });
 
-  console.log(contenidoList);
   return (
     <Tilt
       perspective={3000}
