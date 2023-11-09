@@ -7,7 +7,7 @@ import Inicio from "./components/sections/Inicio";
 import Servicios from "./components/sections/Servicios/Servicios";
 import Precios from "./components/sections/Precios/Precios";
 import Contacto from "./components/sections/Contacto/Contacto";
-import Footer from "./components/sections/Footer";
+import Footer from "./components/sections/Footer/Footer";
 import Lottie from "lottie-web";
 
 import WhatsappBtn from "./components/btns components/WhatsappBtn";

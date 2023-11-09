@@ -20,7 +20,7 @@ import { faCamera } from "@fortawesome/free-solid-svg-icons";
 // START ----IMAGES----
 import marketingImage from "../../../images/marketing.jpg";
 import studioImage from "../../../images/studio.jpg";
-import webservicesImage from "../../../images/webservices.jpg";
+import webServicesImage from "../../../images/webservices.jpg";
 // END ----IMAGES----
 
 const Servicios = ({ id }) => {
@@ -31,7 +31,6 @@ const Servicios = ({ id }) => {
   const webservicesIcon = (
     <FontAwesomeIcon className="webservicesIcon" icon={faComputer} />
   );
-
   const studioIcon = <FontAwesomeIcon className="studioIcon" icon={faCamera} />;
   // END ----SERVICIOS-ICON-VARIABLES----
 
@@ -59,7 +58,7 @@ const Servicios = ({ id }) => {
         "Con sitios web totalmente responsivos, limpios y funcionales que se convierten en tu mejor vendedor 24/7.",
       id: "webservices",
       icon: webservicesIcon,
-      image: webservicesImage,
+      image: webServicesImage,
       services: [
         "Páginas web",
         "Optimización web",
@@ -98,17 +97,15 @@ const Servicios = ({ id }) => {
   // END ----ACTIVE-SECTION----
 
   // START ----DISPLAY-TITLES----
-  const displayServiciosTitle = sections.map((item) => {
-    return (
-      <ServiciosTitle
-        title={item.title}
-        id={item.id}
-        handleClick={handleSectionClick}
-        activeSection={activeSection}
-        icon={item.icon}
-      />
-    );
-  });
+  const displayServiciosTitle = sections.map((item) => (
+    <ServiciosTitle
+      title={item.title}
+      id={item.id}
+      handleClick={handleSectionClick}
+      activeSection={activeSection}
+      icon={item.icon}
+    />
+  ));
   // END ----DISPLAY-TITLES----
   return (
     <div

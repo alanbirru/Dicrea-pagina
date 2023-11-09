@@ -1,17 +1,15 @@
-import React from "react";
-import "../../styles/footer.css";
+import SocialMediaIcon from "./SocialMediaIcon";
+
+import "../../../styles/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhoneVolume,
   faEnvelope,
   faPeopleArrows,
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faTiktok,
-  faFacebook,
-  faSquareInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+
+import iconsArr from "./iconsArr";
 
 const Footer = () => {
   const renderIcon = (className, icon) => (
@@ -25,10 +23,12 @@ const Footer = () => {
     "socialMediaIcon footer-icon",
     faPeopleArrows
   );
-  const tiktokIcon = renderIcon("tiktokIcon", faTiktok);
-  const FacebookIcon = renderIcon("facebookIcon", faFacebook);
-  const instagramIcon = renderIcon("instagramIcon", faSquareInstagram);
+
   const cRightIcon = renderIcon("c-right-icon", faCopyright);
+
+  const displayIcons = iconsArr.map((icon) => (
+    <SocialMediaIcon icon={icon.icon} link={icon.link} />
+  ));
 
   return (
     <footer className="footer">
@@ -58,33 +58,7 @@ const Footer = () => {
           {socialMediaIcon}
           <div className="footer-content">
             <p>NUESTRAS REDES</p>
-            <div className="logos-social-media">
-              <div>
-                <a
-                  href="https://www.tiktok.com/@di.crea?_t=8h0JMtVzJZN&_r=1"
-                  target="_blank"
-                >
-                  {tiktokIcon}
-                </a>
-              </div>
-
-              <div>
-                <a
-                  href="https://instagram.com/di.crea_?igshid=MzMyNGUyNmU2YQ=="
-                  target="_blank"
-                >
-                  {instagramIcon}
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100087115505343&mibextid=ZbWKwL"
-                  target="_blank"
-                >
-                  {FacebookIcon}
-                </a>
-              </div>
-            </div>
+            <div className="logos-social-media">{displayIcons}</div>
           </div>
         </div>
       </div>
