@@ -13,14 +13,14 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
     );
   });
   // ofrecemos list from the paquetes array
-  const ofrecemosList = ofrecemos.map((item, index) => {
-    return (
-      <li className={index + 1}>
-        <FontAwesomeIcon className="checkIcon" icon={faCheck} />
-        {item}
-      </li>
-    );
-  });
+  // const ofrecemosList = ofrecemos.map((item, index) => {
+  //   return (
+  //     <li className={index + 1}>
+  //       <FontAwesomeIcon className="checkIcon" icon={faCheck} />
+  //       {item}
+  //     </li>
+  //   );
+  // });
 
   return (
     <Tilt
@@ -46,6 +46,7 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
       >
         <ul className="contenido-list">{contenidoList}</ul>
       </div>
+      {/* 
       <div
         className="ofrecemos-container"
         data-aos={fadeEffect}
@@ -53,7 +54,8 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
       >
         <h4 className="ofrecemos-title">Ofrecemos:</h4>
         <ul>{ofrecemosList}</ul>
-      </div>
+      </div> */}
+
       <span className="loQuiero" data-aos={fadeEffect} data-aos-duration="3800">
         <a
           href="https://api.whatsapp.com/send?phone=6691472070&text=hola%20que%20tal"

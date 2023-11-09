@@ -5,14 +5,16 @@ const PaquetesContainer = () => {
   // Accordion array
   const paquetes = [
     {
-      paquete: <h3 className="paquete-title">PAQUETE 1 </h3>,
-      precio: "$4,000",
+      paquete: <h3 className="paquete-title">Básico</h3>,
+      precio: "$12,500",
       contenido: [
-        "Diseño de logotipo e identidad visual",
-        `1 sesión de fotos profesional`,
-        "1 video promocional de 30 segundos",
-        "Manejo de redes sociales (2 publicaciones por semana)",
-        "Diseño de flyers y tarjetas de presentación",
+        "Parrilla de Contenido",
+        `Manejo de Redes Sociales
+        (Facebook/Instagram)`,
+        "1 Diseño Semanal (4)",
+        "1 Reel Mensual",
+        "1 Campaña Mensual($ 250 diarios)",
+        "Reporte de resultados",
       ],
       ofrecemos: [
         "Publicidad en Facebook e Instagram",
@@ -23,15 +25,16 @@ const PaquetesContainer = () => {
       fadeEffect: "fade-down",
     },
     {
-      paquete: <h3 className="paquete-title">PAQUETE 2 </h3>,
-      precio: "$7,500",
+      paquete: <h3 className="paquete-title">Intermedio </h3>,
+      precio: "$17,000",
       contenido: [
-        "Diseño de logotipo e identidad visual",
-        "2 sesión de fotos profesional",
-        "1 video promocionales de 60 segundos",
-        "Manejo de redes sociales (3 publicaciones por semana)",
-        "Diseño de flyers y tarjetas de presentación",
-        "Campaña de email marketing",
+        "Parrilla de Contenido",
+        "Manejo de Redes Sociales (Facebook/Instagram",
+        "2 Diseño Semanal (8)",
+        "2 Reel Mensuales",
+        "1 Campaña Mensual ($ 250 diarios) ",
+        "Toma de contenido",
+        "Reporte de resultados",
       ],
       ofrecemos: [
         "Publicidad en Facebook e Instagram",
@@ -43,16 +46,17 @@ const PaquetesContainer = () => {
       fadeEffect: "fade-down",
     },
     {
-      paquete: <h3 className="paquete-title">PAQUETE 3 </h3>,
-      precio: "$11,000",
+      paquete: <h3 className="paquete-title">Premium</h3>,
+      precio: "$24,000",
       contenido: [
-        "Diseño de logotipo e identidad visual",
-        "3 sesiones de fotos profesionales",
-        "2 videos promocionales de 60 segundos",
-        "Manejo de redes sociales (4 publicaciones por semana)",
-        "Diseño de flyers y tarjetas de presentación",
-        "Campaña de email marketing",
-        "Creación de un sitio web básico",
+        "Parrilla de Contenido",
+        "Manejo de Redes Sociales (Facebook/Instagram/Tik Tok)",
+        "3 Diseño Semanal (12)",
+        "4 Reels Mensuales",
+        "2 Campañas Mensuales",
+        "2 Tomas de Contenido",
+        "Landing Page",
+        "Reporte de resultados",
       ],
       ofrecemos: [
         "Publicidad en Facebook e Instagram",
@@ -66,25 +70,28 @@ const PaquetesContainer = () => {
     },
 
     {
-      paquete: <h3 className="paquete-title">PAQUETE 4 </h3>,
-      precio: "$15,500",
+      paquete: <h3 className="paquete-title">Diamante</h3>,
+      precio: "$35,000",
       contenido: [
-        "Diseño de logotipo e identidad visual",
-        "4 sesiones de fotos profesionales",
-        "3 videos promocionales de 60 segundos",
-        "Manejo de redes sociales (5 publicaciones por semana)",
-        "Diseño de flyers y tarjetas de presentación",
-        "Campaña de email marketing",
-        "Creación de un sitio web avanzado",
+        "Parrilla de Contenido",
+        "Manejo de Redes Sociales (Facebook/Instagram/Tik Tok)",
+        "4 Diseño Semanal (16)",
+        "8 Historias (al mes)",
+        "4 Reels Mensuales",
+        "2 Campañas Mensuales($ 200 diarios)",
+        "Papelería",
+        "Página Web",
+        "2 Tik Toks semanales",
+        "Reporte de resultados",
       ],
-      ofrecemos: [
-        "Publicidad en Facebook e Instagram",
-        "Posicionamiento de marca",
-        "Aumento de seguidores en redes sociales",
-        "Estadísticas de redes sociales",
-        "Análisis de campaña de email marketing",
-        "Diseño de sitio web avanzado con funciones personalizadas",
-      ],
+      // ofrecemos: [
+      //   "Publicidad en Facebook e Instagram",
+      //   "Posicionamiento de marca",
+      //   "Aumento de seguidores en redes sociales",
+      //   "Estadísticas de redes sociales",
+      //   "Análisis de campaña de email marketing",
+      //   "Diseño de sitio web avanzado con funciones personalizadas",
+      // ],
       fadeEffect: "fade-down",
     },
   ];
@@ -95,7 +102,7 @@ const PaquetesContainer = () => {
         paquete={paquete.paquete}
         precio={paquete.precio}
         contenido={paquete.contenido}
-        ofrecemos={paquete.ofrecemos}
+        // ofrecemos={paquete.ofrecemos}
         fadeEffect={paquete.fadeEffect}
       />
     );
