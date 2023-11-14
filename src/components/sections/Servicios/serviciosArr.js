@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import marketingImage from "../../../images/marketing.jpg";
-import studioImage from "../../../images/studio.jpg";
-import webServicesImage from "../../../images/webservices.jpg";
+import marketingImage from "../../../images/marketing.webp";
+import studioImage from "../../../images/studio.webp";
+import webServicesImage from "../../../images/webservices.webp";
 
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 import { faComputer } from "@fortawesome/free-solid-svg-icons";

@@ -18,9 +18,9 @@ import { faCamera } from "@fortawesome/free-solid-svg-icons";
 // END ---- IMPORT-ICONS-SERVISES ----
 
 // START ----IMAGES----
-import marketingImage from "../../../images/marketing.jpg";
-import studioImage from "../../../images/studio.jpg";
-import webServicesImage from "../../../images/webservices.jpg";
+import marketingImage from "../../../images/marketing.webp";
+import studioImage from "../../../images/studio.webp";
+import webServicesImage from "../../../images/webservices.webp";
 // END ----IMAGES----
 
 const Servicios = ({ id }) => {

@@ -9,6 +9,8 @@ iframe {
   gap: 60px;
   cursor: pointer;
 }
+
+/* ----START ACCORDION---- */
 .accordion-title {
   display: flex;
   align-items: center;
@@ -44,6 +46,12 @@ iframe {
   background-color: var(--color-5);
   color: black;
 }
+/* ----END ACCORDION---- */
+
+/* ---- START EMAIL FORM ---- */
+.contactanos-title {
+  margin-bottom: 20px;
+}
 .email-section {
   display: flex;
   flex-direction: column;
@@ -57,7 +65,7 @@ iframe {
   border-radius: 10px;
   gap: 10px;
   background-color: var(--color-2);
-  width: 80%;
+  width: 70%;
 }
 .field input {
   width: 100%;
@@ -98,6 +106,7 @@ iframe {
   width: 100%;
   text-align: center;
 }
+/* ---- END EMAIL FORM ---- */
 
 @media only screen and (max-width: 1000px) {
   iframe {

@@ -30,7 +30,7 @@ const EmailForm = () => {
 
   return (
     <div className="email-section">
-      <h3 className="contactanos">Conatactanos</h3>
+      <h3 className="contactanos-title">Conatactanos</h3>
       {success ? (
         <div className="success-message">¡Mensaje enviado correctamente!</div>
       ) : (
