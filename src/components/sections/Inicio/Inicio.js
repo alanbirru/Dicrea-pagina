@@ -1,8 +1,11 @@
-import "../../styles/inicio.css";
-import ParticlesDesign from "../ParticlesDesign";
+import React, { Suspense } from "react";
+import "../../../styles/inicio.css";
+
 const Inicio = ({ guyComputer, id }) => {
+  const ParticlesDesign = React.lazy(() => import("./ParticlesDesign"));
+
   return (
-    <div id={id} className="inicio-component section">
+    <header id={id} className="inicio-component section">
       <div
         className=" inicio-container"
         data-aos="fade-down"
@@ -19,13 +22,17 @@ const Inicio = ({ guyComputer, id }) => {
             pariatur
           </p>
           <button className="btn-contactanos">
-            <a>¡Contactanos!</a>
+            <a>¡Contáctanos!</a>
           </button>
         </div>
         <div ref={guyComputer} className="computerGuy"></div>
-        <ParticlesDesign />
+
+        <Suspense fallback={<div>Loading...</div>}>
+          <ParticlesDesign />
+        </Suspense>
       </div>
-    </div>
+    </header>
   );
 };
+
 export default Inicio;

@@ -29,15 +29,13 @@ los siguientes paquetes son los que se utilizaron en el proyecto, con una breve 
 5. **react-tsparticles:** Agrega animaciones de partículas a la sección de inicio.
 6. **react-type-animation:** Añade animación a la escritura de texto en tiempo real.
 
-# Estructura del Proyecto y Componentes
+# Estructura del Proyecto
 
 todo el proyecto esta en la carpeta /src
 
 ## carpeta /components
 
 - En esta carpeta contiene todas las secciones de la pagina web, como la barra de navegacion, el footer, etc.
-
-### Componentes
 
 ## carpeta /images
 
@@ -50,3 +48,21 @@ todo el proyecto esta en la carpeta /src
 ## carpeta /styles
 
 - contiene todos los archivos css divididos por sección
+
+# Componentes
+
+## sections
+
+### Navbar
+
+### Inicio
+
+### Servicios
+
+### Precios
+
+### Contacto
+
+### Footer
+
+## btns components

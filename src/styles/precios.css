@@ -13,6 +13,7 @@ article {
   align-items: center;
   justify-content: center;
 }
+
 .paquete-container {
   display: flex;
   flex-direction: column;
