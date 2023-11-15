@@ -2,10 +2,10 @@ import PaquetesContainer from "./paquetes/PaquetesContainer";
 import "../../../styles/precios.css";
 const Precios = ({ id }) => {
   return (
-    <div id={id} className="precios-component section">
-      <h2>Precios</h2>
+    <section id={id} className="precios-component section">
+      <h2>Paquetes</h2>
       <PaquetesContainer />
-    </div>
+    </section>
   );
 };
 export default Precios;

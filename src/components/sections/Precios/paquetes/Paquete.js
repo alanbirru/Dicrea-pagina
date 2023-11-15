@@ -23,30 +23,31 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
   // });
 
   return (
-    <Tilt
-      perspective={3000}
-      scale={1.07}
-      className="paquete-container "
-      glareEnable={true}
-      glareMaxOpacity={0.8}
-      glareColor="#ffffff"
-      glarePosition="bottom"
-      glareBorderRadius="20px"
-      transitionEasing={"cubic-bezier(.03,.98,.52,.99)"}
-    >
-      <div data-aos={fadeEffect} data-aos-duration="3800">
-        {paquete}
-        <h4 className="precio-title">{precio}</h4>
-      </div>
-
-      <div
-        className="contenido-container"
-        data-aos={fadeEffect}
-        data-aos-duration="4000"
+    <article>
+      <Tilt
+        perspective={3000}
+        scale={1.07}
+        className="paquete-container"
+        glareEnable={true}
+        glareMaxOpacity={0.8}
+        glareColor="#ffffff"
+        glarePosition="bottom"
+        glareBorderRadius="20px"
+        transitionEasing={"cubic-bezier(.03,.98,.52,.99)"}
       >
-        <ul className="contenido-list">{contenidoList}</ul>
-      </div>
-      {/* 
+        <div data-aos={fadeEffect} data-aos-duration="3800">
+          {paquete}
+          <h4 className="precio-title">{precio}</h4>
+        </div>
+
+        <div
+          className="contenido-container"
+          data-aos={fadeEffect}
+          data-aos-duration="4000"
+        >
+          <ul className="contenido-list">{contenidoList}</ul>
+        </div>
+        {/* 
       <div
         className="ofrecemos-container"
         data-aos={fadeEffect}
@@ -56,15 +57,20 @@ const Paquete = ({ paquete, precio, contenido, ofrecemos, fadeEffect }) => {
         <ul>{ofrecemosList}</ul>
       </div> */}
 
-      <span className="loQuiero" data-aos={fadeEffect} data-aos-duration="3800">
-        <a
-          href="https://api.whatsapp.com/send?phone=6691472070&text=hola%20que%20tal"
-          target="_blank"
+        <span
+          className="loQuiero"
+          data-aos={fadeEffect}
+          data-aos-duration="3800"
         >
-          ¡Lo Quiero!
-        </a>
-      </span>
-    </Tilt>
+          <a
+            href="https://api.whatsapp.com/send?phone=6691472070&text=hola%20que%20tal"
+            target="_blank"
+          >
+            ¡Lo Quiero!
+          </a>
+        </span>
+      </Tilt>
+    </article>
   );
 };
 export default Paquete;

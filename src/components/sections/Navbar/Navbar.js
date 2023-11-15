@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Hamburger from "./Hamburger";
-import { CSSTransition } from "react-transition-group";
 import "../../../styles/navbar.css";
 import logo from "../../../images/DICREA-LOGO.png";
 
@@ -60,15 +59,13 @@ const Navbar = () => {
   ));
 
   return (
-    <CSSTransition in={visible} classNames="slide" timeout={200} unmountOnExit>
-      <div className="navbar-component">
-        <img className="navLogo" src={logo} alt="Logo" />
-        <ul className={`navItems ${hamburgerOpen ? "open" : ""}`}>
-          {listNavItems}
-        </ul>
-        <Hamburger isOpen={hamburgerOpen} onClick={handleHamburgerClick} />
-      </div>
-    </CSSTransition>
+    <nav className="navbar-component">
+      <img className="navLogo" src={logo} alt="Logo" />
+      <ul className={`navItems ${hamburgerOpen ? "open" : ""}`}>
+        {listNavItems}
+      </ul>
+      <Hamburger isOpen={hamburgerOpen} onClick={handleHamburgerClick} />
+    </nav>
   );
 };
 
