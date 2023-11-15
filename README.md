@@ -18,7 +18,7 @@ los siguientes comandos son para actualizar cambios a github
 4. "npm run build"
 5. "npm run deploy"
 
-# paquetes npm
+# Paquetes npm
 
 los siguientes paquetes son los que se utilizaron en el proyecto, con una breve descripción.
 
@@ -29,12 +29,24 @@ los siguientes paquetes son los que se utilizaron en el proyecto, con una breve 
 5. react-tsparticles: Agrega animaciones de partículas a la sección de inicio.
 6. react-type-animation: Añade animación a la escritura de texto en tiempo real.
 
-# Estructura del Proyecto
+# Estructura del Proyecto y Componentes
 
 todo el proyecto esta en la carpeta /src
 
 ## carpeta /components
 
+- En esta carpeta contiene todas las secciones de la pagina web, como la barra de navegacion, el footer, etc.
+
+### Componentes
+
 ## carpeta /images
 
-## carpeta /
+- Contiene todas las imagenes que se utilizan para el proyecto
+
+## carpeta /lottie-animation
+
+- contiene la animación vectorial del inicio
+
+## carpeta /styles
+
+- contiene todos los archivos css divididos por sección
