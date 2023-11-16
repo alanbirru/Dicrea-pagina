@@ -1,30 +1,32 @@
-// Importaciones necesarias
 import React, { useState, useEffect } from "react";
 import Hamburger from "./Hamburger";
-import "../../../styles/navbar.css"; // Importación de estilos
+import "../../../styles/navbar.css";
 import logo from "../../../images/DICREA-LOGO.png";
 
-// Definición del componente Navbar
 const Navbar = () => {
-  // Estados del componente
+  // useState for tracking the value of the scroll
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  // useState for hiding navbar on scroll
   const [visible, setVisible] = useState(true);
+
+  // useState for opening or closing hamburger
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-  // Función para manejar clics en los elementos de navegación
+  // Navigates to the section on click
   const handleItemClickNav = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
     setHamburgerOpen(false);
   };
 
-  // Función para manejar clics en el ícono de hamburguesa
+  // Toggles the hamburger menu open/close
   const handleHamburgerClick = () => {
     setHamburgerOpen(!hamburgerOpen);
   };
 
-  // Efecto para manejar el desplazamiento de la barra de navegación
   useEffect(() => {
+    // Hides the navbar when scrolling down, shows when scrolling up
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
       const isVisible = prevScrollPos > currentScrollPos;
@@ -38,30 +40,28 @@ const Navbar = () => {
     };
   }, [prevScrollPos]);
 
-  // Datos de los elementos de navegación
   const navItemsArr = [
-    { id: "inicio", name: "Inicio" },
-    { id: "servicios", name: "Servicios" },
-    { id: "precios", name: "Precios" },
-    { id: "contacto", name: "Contacto" },
+    { id: 1, name: "Inicio" },
+    { id: 2, name: "Servicios" },
+    { id: 3, name: "Precios" },
+    { id: 4, name: "Contacto" },
   ];
 
-  // Generar la lista de elementos de navegación
+  // Generates the list of navigation items
   const listNavItems = navItemsArr.map((item) => (
     <li
-      className="navbarItem"
+      className="navItem"
       key={item.id}
-      onClick={() => handleItemClickNav(item.id)}
+      onClick={() => handleItemClickNav(item.name)}
     >
       {item.name}
     </li>
   ));
 
-  // Estructura del componente Navbar
   return (
-    <nav className={`navbar ${visible ? "visible" : "hidden"}`}>
-      <img className="navbarLogo" src={logo} alt="Logo" />
-      <ul className={`navbarItems ${hamburgerOpen ? "open" : ""}`}>
+    <nav className="navbar-component">
+      <img className="navLogo" src={logo} alt="Logo" />
+      <ul className={`navItems ${hamburgerOpen ? "open" : ""}`}>
         {listNavItems}
       </ul>
       <Hamburger isOpen={hamburgerOpen} onClick={handleHamburgerClick} />
@@ -69,5 +69,4 @@ const Navbar = () => {
   );
 };
 
-// Exportar el componente Navbar
 export default Navbar;

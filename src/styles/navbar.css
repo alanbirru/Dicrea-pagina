@@ -1,5 +1,4 @@
-/* ----- Navbar Styles ----- */
-.navbar {
+.navbar-component {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -12,12 +11,12 @@
   z-index: 1;
 }
 
-.navbarItems {
+.navItems {
   display: flex;
   gap: 16px;
 }
 
-.navbarItem {
+.navItem {
   list-style: none;
   color: var(--color-1);
   padding: 7px;
@@ -31,26 +30,22 @@
   cursor: pointer;
   font-weight: 600;
 }
-
-.navbarItemsContainer.open {
+.navItemsContainer.open {
   display: block;
 }
-
-.navbarItem:hover {
+.navItem:hover {
   background-color: var(--color-5);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   transform: scale(1.1, 1.1);
 }
-
-.navbarLogo {
+.navLogo {
   width: 80px;
   margin: 10px;
   margin-left: 50px;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
-
-.navbarLogo:hover {
+.navLogo:hover {
   transform: scale(1.1, 1.1);
 }
 
@@ -59,7 +54,6 @@
   right: 1rem;
   top: 2.4em;
 }
-
 .hamburger span {
   display: none;
   width: 40px;
@@ -81,7 +75,7 @@
   transform: translateY(-11px) rotate(-45deg);
 }
 
-/*----- Start Fade Effect -----*/
+/*-----START-FADE-EFFECT-----*/
 .slide-enter {
   transform: translateY(-100%);
 }
@@ -99,11 +93,11 @@
   transform: translateY(-100%);
   transition: transform 300ms;
 }
-/* ----- End Fade Effect ----- */
+/* -----END-FADE-EFFECT----- */
 
-/* ----- Start Media Query ----- */
+/* -----START MEDIA QUERY----- */
 @media only screen and (max-width: 1200px) {
-  .navbarItems {
+  .navItems {
     display: none;
   }
 
@@ -113,32 +107,29 @@
     top: 35px;
   }
 
-  .navbarLogo {
+  .navLogo {
     width: 80px;
   }
 
   .hamburger span {
     display: block;
   }
-
-  .navbar.open {
+  .navbar-component {
     align-items: flex-start;
     flex-direction: column;
     font-size: 1.2em;
   }
-
-  .navbarItems.open {
+  .navItems.open {
     display: flex;
     flex-direction: column;
     width: 100%;
     transition: 0.2s ease-in-out;
     border-bottom: solid 7px var(--color-5);
   }
-
-  .navbarItem {
+  .navItem {
     text-align: center;
     border-radius: 0;
     color: var(--color-1);
   }
 }
-/* ----- End Media Query ----- */
+/* -----END MEDIA QUERY----- */
