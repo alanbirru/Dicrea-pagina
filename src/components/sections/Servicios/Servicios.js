@@ -32,7 +32,7 @@ const Servicios = ({ id }) => {
   ));
   // END ----DISPLAY-TITLES----
   return (
-    <div
+    <section
       id={id}
       className="servicios-component section"
       data-aos-once="true"
@@ -42,7 +42,7 @@ const Servicios = ({ id }) => {
 
       <div className="servicios-title">{displayServiciosTitle}</div>
       <ServiciosSection sections={serviciosArr} activeSection={activeSection} />
-    </div>
+    </section>
   );
 };
 export default Servicios;

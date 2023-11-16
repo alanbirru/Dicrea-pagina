@@ -20,7 +20,7 @@ const ServiciosSection = ({ sections, activeSection }) => {
   // END ----LIST-OF-SERVICES-BUTTONS----
 
   return (
-    <div className="servicios-section-container">
+    <article className="servicios-section-container">
       <div className="servicios-section">
         <h3 className="section-h3">{section.title}</h3>
         <p>{section.description}</p>
@@ -36,7 +36,7 @@ const ServiciosSection = ({ sections, activeSection }) => {
           ></img>
         </Tilt>
       </div>
-    </div>
+    </article>
   );
 };
 export default ServiciosSection;

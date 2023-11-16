@@ -28,7 +28,7 @@ const Contacto = ({ id }) => {
   ];
 
   return (
-    <div id={id} className="contacto-component section">
+    <section id={id} className="contacto-component section">
       <h2>Contacto</h2>
 
       <div className="contacto-container">
@@ -46,7 +46,7 @@ const Contacto = ({ id }) => {
           <AccordionContainer accordion={accordionData} />
         </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 export default Contacto;

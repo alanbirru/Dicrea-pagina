@@ -1,39 +1,10 @@
-.inicio-container h1 {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-}
-
-.container .inicio-component {
-  position: relative;
-  height: 100vh;
-  /* background-image: linear-gradient(
-    to bottom right,
-    rgb(165, 75, 183),
-    var(--color-2)
-  ); */
-
-  background: radial-gradient(
-    circle,
-    rgb(193, 62, 219),
-    20%,
-    var(--color-2) 49%,
-    var(--color-1) 100%
-  );
-
-  width: 100%;
-  margin-top: 0;
-  overflow: hidden;
-  max-height: 1000px;
-  min-height: 900px;
-}
-
+/* --- COMMON STYLES --- */
 .inicio-container {
-  padding-top: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 130px;
   padding-bottom: 100px;
 }
 
@@ -51,7 +22,33 @@
   text-align: center;
 }
 
-/* ---START BTN-CONTACTANOS--- */
+/* --- HEADER STYLES --- */
+.inicio-component {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: 0;
+  overflow: hidden;
+  max-height: 1000px;
+  min-height: 900px;
+
+  /* Example gradient background */
+  background: radial-gradient(
+    circle,
+    rgb(193, 62, 219),
+    20%,
+    var(--color-2) 49%,
+    var(--color-1) 100%
+  );
+}
+
+.inicio-container h1 {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+/* --- BUTTON STYLES --- */
 .btn-contactanos {
   color: var(--color-1);
   background-color: var(--color-5);
@@ -61,26 +58,19 @@
   font-size: 16px;
   cursor: pointer;
   box-shadow: inset 0 0 0 0 var(--color-3);
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
   border: none;
 }
-/* ---END BTN-CONTACTANOS--- */
 
 .btn-contactanos:hover {
   box-shadow: inset 400px 0 0 0 #ffffff;
   transform: scale(1.1, 1.1);
 }
-
-.yellowSpan {
-  color: var(--color-5);
-}
-
 .computerGuy {
   width: 500px;
 }
 
+/* --- MEDIA QUERIES --- */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
   .inicio-container h1 {
@@ -96,22 +86,8 @@
   .computerGuy {
     width: 90%;
   }
-  .container .inicio-component {
+  .inicio-component {
     height: 875px;
     background-color: var(--color-2);
-    width: 100%;
   }
 }
-/* ----START MEDIA QUERY---- */
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-/* ----END MEDIA QUERY---- */
